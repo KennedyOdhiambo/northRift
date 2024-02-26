@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import './globals.css';
+import Header from '@/app/components/Header';
 
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "North Rift Shuttle",
-  description: "North rift online ticketing portal",
+  title: 'North Rift Shuttle',
+  description: 'North rift online ticketing portal',
 };
 
 export default function RootLayout({
