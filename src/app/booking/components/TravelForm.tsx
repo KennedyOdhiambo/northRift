@@ -1,8 +1,8 @@
 import React, { useReducer } from 'react';
-import DropDownSelect from './DropDownSelect';
+import DropDownSelect from '../../components/DropDownSelect';
 import { CiLocationOn } from 'react-icons/ci';
-import CustomDatePicker from './CustomDatepicker';
-import Button from './Button';
+import CustomDatePicker from '../../components/CustomDatepicker';
+import Button from '../../components/Button';
 
 const sampleLocation = [
   { id: 101, value: 'Nairobi' },

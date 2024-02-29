@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Button from './Button';
+import Button from '../../components/Button';
 import TravelForm from './TravelForm';
 
 export default function TripSelection() {
