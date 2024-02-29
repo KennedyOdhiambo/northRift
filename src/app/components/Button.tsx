@@ -4,13 +4,14 @@ type ButtonProps = {
   disabled?: boolean;
   selected?: boolean;
   type: 'variable' | 'primary';
+  className?: string;
 };
 
-export default function Button({ children, onClick, disabled, selected, type }: ButtonProps) {
+export default function Button({ children, onClick, disabled, selected, type, className }: ButtonProps) {
   if (type === 'primary')
     return (
       <button
-        className="py-2 px-4 rounded-md focus:ring-2 bg-cyan-500 hover:bg-cyan-800 h-fit text-white focus:ring-cyan-300 active:bg-cyan-800"
+        className={`${className} py-2 px-4 rounded-md focus:ring-2 bg-cyan-500 hover:bg-cyan-800 h-fit text-white focus:ring-cyan-300 active:bg-cyan-800`}
         onClick={onClick}
         disabled={disabled}
       >
@@ -23,7 +24,7 @@ export default function Button({ children, onClick, disabled, selected, type }: 
       <button
         onClick={onClick}
         disabled={disabled}
-        className={`py-2 px-4 rounded-sm focus:outline-none focus:ring-2 ${
+        className={`${className} py-2 px-4 rounded-sm focus:outline-none focus:ring-2 ${
           selected ? 'bg-cyan-600 text-white focus:ring-cyan-300 cursor-not-allowed' : 'bg-white text-cyan-800'
         }  `}
       >

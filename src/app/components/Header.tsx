@@ -4,7 +4,7 @@ import * as Ci from 'react-icons/ci';
 
 const Header = () => {
   return (
-    <div className="w-screen h-12 bg-cyan-600 text-white text-sm p-2 flex flex-row justify-between items-center md:px-20">
+    <div className="h-12 bg-cyan-600 text-white text-sm p-2 flex flex-row justify-between items-center md:px-20">
       <div className="hidden sm:flex flex-row justify-start gap-4">
         <div className="flex flex-row items-center gap-1">
           <BsTelephone />
