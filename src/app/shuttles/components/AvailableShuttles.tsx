@@ -5,7 +5,7 @@ import Button from '@/app/components/Button';
 
 export default function AvailableShuttles() {
   return (
-    <div className="flex flex-col items-end gap-4 border shadow-md rounded-3xl border-gray-100 px-6 py-8">
+    <div className="flex flex-col items-end gap-4 border shadow-md rounded-3xl border-gray-100 px-6 py-8 bg-white">
       <div className="flex flex-row gap-16 w-full justify-center">
         <TransitInfoCard title="Route:" details="Nairobi to Eldoret" icon={<FaRoute />} />
         <TransitInfoCard title="Bus Number:" details="KYC 2023" icon={<FaBus />} />
