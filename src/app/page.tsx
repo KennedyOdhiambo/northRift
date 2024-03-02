@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import TripSelection from '@/app/booking/components/TripSelection';
 import ScheduledDepartures from './booking/components/ScheduledDepartures';
-import Shuttlescard from './shuttles/components/Shuttlescard';
+import Booking from './booking/components/Booking';
 
 export default function Home() {
   return (
@@ -11,9 +11,10 @@ export default function Home() {
         <div className="absolute z-50 inset-x-0 bottom-0 transform translate-y-10">
           <TripSelection />
         </div>
-        <div className="flex flex-col justify-center items-center gap-10 absolute mt-12 w-full max-w-full  p-10">
+        <div className="flex flex-col justify-center items-center gap-10 absolute mt-28 w-full max-w-full">
           <ScheduledDepartures />
-          <Shuttlescard />
+          {/* <Shuttlescard /> */}
+          <Booking />
         </div>
       </div>
     </main>
