@@ -14,7 +14,7 @@ export default function BusSeatComponent({ seatData }: { seatData: Array<{ id: n
 
   console.log(selectedSeats);
   return (
-    <div className="mx-auto gap-20 flex flex-row p-4">
+    <div className="gap-20 flex flex-row p-4">
       <div>
         {/* Front Row */}
         <div className="flex gap-4">

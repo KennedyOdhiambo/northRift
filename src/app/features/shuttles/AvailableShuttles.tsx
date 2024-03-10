@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { FaBus, FaRoute, FaCalendar, FaClock, FaCouch, FaTicketAlt } from 'react-icons/fa';
 import TransitInfoCard from './TransitInfoCard';
 import Button from '@/app/components/Button';
 
-export default function AvailableShuttles() {
+type AvailableShuttlesProps = {
+  setBookingModal: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function AvailableShuttles({ setBookingModal }: AvailableShuttlesProps) {
   return (
     <div className="flex flex-col items-end gap-4 border shadow-md rounded-3xl border-gray-100 px-6 py-8 bg-white">
       <div className="flex flex-row gap-16 w-full justify-center">
@@ -15,7 +19,7 @@ export default function AvailableShuttles() {
         <TransitInfoCard title="Ticket Price:" details="Ksh 5000" icon={<FaTicketAlt />} />
       </div>
 
-      <Button type="primary" className="w-fit">
+      <Button type="primary" className="w-fit" onClick={() => setBookingModal(true)}>
         Book Seat
       </Button>
     </div>
